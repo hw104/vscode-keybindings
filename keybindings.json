@@ -1724,5 +1724,13 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.files.openFileFolder"
+    },
+    {
+        "key": "cmd+o",
+        "command": "-workbench.action.files.openFileFolder"
     }
 ]
