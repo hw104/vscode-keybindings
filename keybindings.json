@@ -1732,5 +1732,10 @@
     {
         "key": "cmd+o",
         "command": "-workbench.action.files.openFileFolder"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
     }
 ]
