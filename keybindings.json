@@ -956,6 +956,34 @@
         "command": "-workbench.action.moveEditorToLastGroup"
     },
     {
+        "key": "ctrl+x 4",
+        "command": "git-graph.view"
+    },
+    {
+        "key": "ctrl+x 5",
+        "command": "git.checkout"
+    },
+    {
+        "key": "ctrl+x 6",
+        "command": "git.fetchPrune"
+    },
+    {
+        "key": "ctrl+x 7",
+        "command": "git.pull"
+    },
+    {
+        "key": "ctrl+x 8",
+        "command": "git.commitAll"
+    },
+    {
+        "key": "ctrl+x 9",
+        "command": "git.push"
+    },
+    {
+        "key": "ctrl+x 0",
+        "command": "git.cleanAll"
+    },
+    {
         "key": "ctrl+alt+b",
         "command": "workbench.action.navigateBack"
     },
