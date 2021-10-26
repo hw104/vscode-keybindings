@@ -1769,5 +1769,20 @@
     {
         "key": "ctrl+x",
         "command": "-editor.action.clipboardCutAction"
+    },
+    {
+        "key": "n cmd",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
     }
 ]
