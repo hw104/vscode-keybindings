@@ -1779,5 +1779,10 @@
         "key": "cmd+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     }
 ]
