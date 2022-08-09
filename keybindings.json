@@ -1788,5 +1788,64 @@
     {
         "key": "shift shift",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+w",
+        "command": "multiclip.copy",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-multiclip.copy",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x y",
+        "command": "multiclip.list"
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "-multiclip.paste",
+        "when": "editorTextFocus && editorLangId != 'markdown'"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-multiclip.regularPaste",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-multiclip.cutMerge",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+x",
+        "command": "-multiclip.cut",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-multiclip.copyMerge",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
     }
 ]
