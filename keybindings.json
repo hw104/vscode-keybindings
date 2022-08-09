@@ -522,6 +522,11 @@
         "command": "-editor.action.clipboardCopyAction"
     },
     {
+        "key": "alt+c",
+        "command": "-multiclip.copy",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "alt+d",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
@@ -575,6 +580,20 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
+        "key": "alt+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+o",
+        "command": "-workbench.action.files.openFileFolder"
+    },
+    {
         "key": "alt+p",
         "command": "-workbench.action.quickOpen"
     },
@@ -591,6 +610,11 @@
         "key": "alt+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
+    },
+    {
+        "key": "alt+v",
+        "command": "-multiclip.regularPaste",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+w",
@@ -611,6 +635,11 @@
         "command": "editor.action.clipboardCopyAction"
     },
     {
+        "key": "alt+w",
+        "command": "multiclip.copy",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "alt+x",
         "command": "workbench.action.showCommands"
     },
@@ -626,6 +655,11 @@
         "key": "alt+x",
         "command": "-filesExplorer.cut",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "alt+x",
+        "command": "-multiclip.cut",
+        "when": "editorTextFocus"
     },
     {
         "key": "cmd+.",
@@ -1267,6 +1301,11 @@
         "when": "callHierarchyVisible && callHierarchyDirection == 'incomingCalls'"
     },
     {
+        "key": "shift+alt+c",
+        "command": "-multiclip.copyMerge",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "shift+alt+d",
         "command": "-workbench.view.debug",
         "when": "viewContainer.workbench.view.debug.enabled"
@@ -1384,6 +1423,16 @@
         "command": "editor.action.peekTypeDefinition"
     },
     {
+        "key": "shift+alt+v",
+        "command": "-multiclip.paste",
+        "when": "editorTextFocus && editorLangId != 'markdown'"
+    },
+    {
+        "key": "shift+alt+x",
+        "command": "-multiclip.cutMerge",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "shift+alt+y",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
@@ -1465,6 +1514,16 @@
     {
         "key": "shift+cmd+f",
         "command": "cursorWordRightSelect"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
     },
     {
         "key": "shift+cmd+f12",
@@ -1557,6 +1616,20 @@
         "when": "workbench.panel.repl.view.active"
     },
     {
+        "key": "alt+alt+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+alt+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+alt+s",
+        "command": "-workbench.action.files.saveAll"
+    },
+    {
         "key": "alt+cmd+[",
         "command": "-editor.fold",
         "when": "editorTextFocus && foldingEnabled"
@@ -1568,6 +1641,20 @@
     },
     {
         "key": "alt+cmd+s",
+        "command": "-workbench.action.files.saveAll"
+    },
+    {
+        "key": "cmd+cmd+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+cmd+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+cmd+s",
         "command": "-workbench.action.files.saveAll"
     },
     {
