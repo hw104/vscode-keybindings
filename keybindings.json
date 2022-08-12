@@ -969,11 +969,6 @@
     },
     {
         "key": "ctrl+shift+l",
-        "command": "eslint.executeAutofix",
-        "when": "editorLangId == 'typescript'"
-    },
-    {
-        "key": "ctrl+shift+l",
         "command": "notebook.format",
         "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
     },
