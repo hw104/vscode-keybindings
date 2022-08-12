@@ -1,4 +1,4 @@
-# STBBORN  VSCODE KEYBOARD SHORTCUTS
+# STBBORN VSCODE KEYBOARD SHORTCUTS
 
 - [Concepts](#concepts)
 - [Basic Editing](#basic-editing)
@@ -14,7 +14,8 @@
 - Easy to type. Keep fingers close to home position.
 - For keyboards with the <kbd>ctrl</kbd> key next to the <kbd>a</kbd> key and the <kbd>shift</kbd> and <kbd>alt</kbd> keys near each thumb.
 
- 
+
+
 ## Basic Editing
 
 #### Cursor Moving
@@ -41,9 +42,9 @@
 #### Selection
 
 - <kbd>ctrl</kbd> + <kbd>;</kbd>:
-Expand Selection. `editor.action.smartSelect.grow`.
+  Expand Selection. `editor.action.smartSelect.grow`
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>;</kbd>:
-Shrink Selection. `editor.action.smartSelect.shrink`.
+  Shrink Selection. `editor.action.smartSelect.shrink`.
 - <kbd>ctrl</kbd> + <kbd>]</kbd>: `Select to Bracket`.
 - <kbd>ctrl</kbd> + <kbd>g</kbd>: `cancelSelection`.
 
@@ -55,12 +56,11 @@ Shrink Selection. `editor.action.smartSelect.shrink`.
 - <kbd>alt</kbd> + <kbd>y</kbd>: Cyclic paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip).
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>y</kbd>: Select and paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip).
 
-
 ## IDE Features
 
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>: Generate code.
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>:
-Display, Inspect or Peek information.
+  Display, Inspect or Peek information.
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>?</kbd>: Jump / Refactoring.
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>number</kbd>: Git operation.
 - <kbd>alt</kbd> + <kbd>number</kbd>: Toggle IDE tools views.
