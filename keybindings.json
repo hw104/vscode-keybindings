@@ -239,28 +239,13 @@
     },
     {
         "key": "ctrl+l",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "editor.action.formatDocument.none",
-        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
-    },
-    {
-        "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
     },
     {
         "key": "ctrl+l",
-        "command": "notebook.format",
-        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "notebook.formatCell",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+        "command": "workbench.action.navigateToLastEditLocation",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+n",
@@ -983,6 +968,21 @@
         "when": "editorLangId == 'typescript'"
     },
     {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
         "key": "ctrl+shift+m",
         "command": "-workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active"
@@ -1061,10 +1061,6 @@
     },
     {
         "key": "ctrl+alt+e",
-        "command": "workbench.action.navigateToLastEditLocation"
-    },
-    {
-        "key": "ctrl+alt+e",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
@@ -1093,10 +1089,6 @@
     {
         "key": "ctrl+alt+k",
         "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "workbench.action.navigateToLastEditLocation"
     },
     {
         "key": "ctrl+alt+n",
@@ -1184,10 +1176,6 @@
     },
     {
         "key": "ctrl+cmd+e",
-        "command": "workbench.action.navigateToLastEditLocation"
-    },
-    {
-        "key": "ctrl+cmd+e",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
@@ -1216,10 +1204,6 @@
     {
         "key": "ctrl+cmd+k",
         "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "ctrl+cmd+l",
-        "command": "workbench.action.navigateToLastEditLocation"
     },
     {
         "key": "ctrl+cmd+n",
