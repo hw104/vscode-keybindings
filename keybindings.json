@@ -340,13 +340,13 @@
     },
     {
         "key": "ctrl+space",
-        "command": "editor.action.setSelectionAnchor",
-        "when": "editorTextFocus"
+        "command": "editor.action.selectFromAnchorToCursor",
+        "when": "editorTextFocus && selectionAnchorSet"
     },
     {
         "key": "ctrl+space",
-        "command": "editor.action.selectFromAnchorToCursor",
-        "when": "editorTextFocus && selectionAnchorSet"
+        "command": "editor.action.setSelectionAnchor",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+t",
