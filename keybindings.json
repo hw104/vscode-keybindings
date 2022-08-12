@@ -996,6 +996,11 @@
         "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
     },
     {
+        "key": "ctrl+shift+r",
+        "command": "editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+shift+s",
         "command": "-workbench.action.files.saveAs"
     },
