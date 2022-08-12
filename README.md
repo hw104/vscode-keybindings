@@ -44,6 +44,8 @@
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>;</kbd>:
   Shrink Selection. `editor.action.smartSelect.shrink`.
 - <kbd>ctrl</kbd> + <kbd>]</kbd>: `Select to Bracket`.
+- <kbd>ctrl</kbd> + <kbd>space</kbd>: Start or  Selection. [`extension.setMark`](https://marketplace.visualstudio.com/items?itemName=ericmccarthy.vs-code-mark-point)
+- <kbd>ctrl</kbd> + <kbd>g</kbd>: `cancelSelection`.
 - <kbd>ctrl</kbd> + <kbd>g</kbd>: `cancelSelection`.
 
 ### Copy / Paste
@@ -54,17 +56,32 @@
 - <kbd>alt</kbd> + <kbd>y</kbd>: Cyclic paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip).
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>y</kbd>: Select and paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip).
 
+
+### Save / Open / close
+
+todo
+
 ## IDE Features
 
 ### Basic rule
 
+- <kbd>ctrl</kbd> + <kbd>?</kbd>: [Common Operations](#common-operations).
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>?</kbd>: [Jump](#jump).
-- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>: Generate code.
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>: [Code Operations](#code-operations), e.g. Generation, Refactoring.<!-- - <kbd>alt</kbd> + <kbd>number</kbd>: Folding. -->
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>:
   Display, Inspect or Peek information.
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>number</kbd>: Git operation.
 - <kbd>alt</kbd> + <kbd>number</kbd>: Toggle IDE tools views.
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>?</kbd>: Misc.
+
+### Common Operations
+
+- <kbd>ctrl</kbd> + <kbd>/</kbd>: Suggest.
+- <kbd>alt</kbd> + <kbd>/</kbd>: Suggest.
+- <kbd>ctrl</kbd> + <kbd>r</kbd>: (R)ename Symbol
+- <kbd>ctrl</kbd> + <kbd>s</kbd>: (S)earch.
+- <kbd>ctrl</kbd> + <kbd>c</kbd>: Toggle Line (C)omment
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>c</kbd>: Toggle Block (C)omment
 
 ### Jump
 
@@ -84,3 +101,11 @@
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>l</kbd>: Go to (L)ast Edit Location.
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>e</kbd>: Go to (E)ditor.
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>j</kbd>: Open Breadcrumbs and Selet and (J)ump.
+
+### Code Operations
+
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>: (R)efactor...
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>l</kbd>: (L)int, i.e. Format Document.
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd>: Quick (F)ix...
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>s</kbd>: (S)ource ACtion...
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>o</kbd>: Organize Imports.

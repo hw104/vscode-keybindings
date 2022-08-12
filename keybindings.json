@@ -1201,6 +1201,10 @@
         "command": "workbench.action.openGlobalKeybindings"
     },
     {
+        "key": "ctrl+cmd+l",
+        "command": "workbench.action.navigateToLastEditLocation"
+    },
+    {
         "key": "ctrl+cmd+n",
         "command": "editor.action.marker.next"
     },
@@ -1773,8 +1777,7 @@
     },
     {
         "key": "ctrl+x b",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-        "when": "editorFocus"
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
         "key": "ctrl+x f",
