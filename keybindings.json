@@ -816,6 +816,10 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
+        "key": "cmd+k",
+        "command": "deleteAllLeft"
+    },
+    {
         "key": "cmd+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
