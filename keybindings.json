@@ -340,8 +340,13 @@
     },
     {
         "key": "ctrl+space",
-        "command": "extension.setMark",
+        "command": "editor.action.setSelectionAnchor",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "editor.action.selectFromAnchorToCursor",
+        "when": "editorTextFocus && selectionAnchorSet"
     },
     {
         "key": "ctrl+t",
@@ -885,6 +890,10 @@
     {
         "key": "cmd+x",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+y",
+        "command": "multiclip.paste"
     },
     {
         "key": "ctrl+shift+-",
@@ -1926,6 +1935,11 @@
         "key": "cmd+k cmd+j",
         "command": "-editor.unfoldAll",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "-editor.action.selectFromAnchorToCursor",
+        "when": "editorTextFocus && selectionAnchorSet"
     },
     {
         "key": "cmd+k cmd+w",
