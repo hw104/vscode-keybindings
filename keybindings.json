@@ -346,7 +346,7 @@
     {
         "key": "ctrl+space",
         "command": "editor.action.setSelectionAnchor",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && !selectionAnchorSet"
     },
     {
         "key": "ctrl+t",
