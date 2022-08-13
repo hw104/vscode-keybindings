@@ -164,5 +164,5 @@
 
 ### Misc
 
-- <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>o</kbd>: Run Task
-- <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>o</kbd>: Run Debugging
+- <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>r</kbd>: Run Debugging
+- <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>t</kbd>: Run Task
