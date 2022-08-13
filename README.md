@@ -166,3 +166,5 @@
 
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>r</kbd>: Run Debugging
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>t</kbd>: Run Task
+- <kbd>alt</kbd> + <kbd>x</kbd>: Show and Run Commands
+- <kbd>shift</kbd>, <kbd>shift</kbd>: Show and Run Commands
