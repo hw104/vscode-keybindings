@@ -1841,6 +1841,11 @@
         "command": "workbench.action.files.openFileFolder"
     },
     {
+        "key": "ctrl+x ctrl+r",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
         "key": "ctrl+x ctrl+s",
         "command": "workbench.action.files.save"
     },
