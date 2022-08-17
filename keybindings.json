@@ -565,6 +565,10 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
+        "key": "alt+k",
+        "command": "deleteAllLeft"
+    },
+    {
         "key": "alt+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
@@ -635,6 +639,10 @@
     {
         "key": "alt+x",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "alt+y",
+        "command": "yac.paste"
     },
     {
         "key": "cmd+.",
@@ -1070,6 +1078,10 @@
         "command": "workbench.action.openGlobalKeybindings"
     },
     {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.navigateToLastEditLocation"
+    },
+    {
         "key": "ctrl+alt+n",
         "command": "editor.action.marker.next"
     },
@@ -1419,7 +1431,6 @@
         "key": "shift+cmd+b",
         "command": "cursorWordEndLeftSelect"
     },
-    
     {
         "key": "shift+cmd+c",
         "command": "editor.showCallHierarchy",
@@ -1453,6 +1464,11 @@
     {
         "key": "shift+cmd+e",
         "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
     {
         "key": "shift+cmd+f",
@@ -1809,6 +1825,11 @@
         "key": "alt+k alt+j",
         "command": "-editor.unfoldAll",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+k alt+k",
+        "command": "-editor.action.selectFromAnchorToCursor",
+        "when": "editorTextFocus && selectionAnchorSet"
     },
     {
         "key": "alt+k alt+w",
