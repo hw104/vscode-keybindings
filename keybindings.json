@@ -1673,7 +1673,19 @@
         "command": "workbench.action.showAllSymbols"
     },
     {
+        "key": "ctrl ctrl",
+        "command": "workbench.action.showCommands"
+    },
+    {
         "key": "shift shift",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "alt alt",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd cmd",
         "command": "workbench.action.showCommands"
     },
     {
