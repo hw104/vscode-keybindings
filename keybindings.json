@@ -1787,7 +1787,7 @@
     },
     {
         "key": "ctrl+x y",
-        "command": "yac.pickAndPaste"
+        "command": "yac.list"
     },
     {
         "key": "ctrl+x ctrl+f",
