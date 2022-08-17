@@ -512,11 +512,6 @@
         "command": "-editor.action.clipboardCopyAction"
     },
     {
-        "key": "alt+c",
-        "command": "-multiclip.copy",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+d",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
@@ -598,11 +593,6 @@
     },
     {
         "key": "alt+v",
-        "command": "-multiclip.regularPaste",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
     },
@@ -626,7 +616,7 @@
     },
     {
         "key": "alt+w",
-        "command": "multiclip.copy",
+        "command": "yac.copy",
         "when": "editorTextFocus"
     },
     {
@@ -641,11 +631,6 @@
         "key": "alt+x",
         "command": "-filesExplorer.cut",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-    },
-    {
-        "key": "alt+x",
-        "command": "-multiclip.cut",
-        "when": "editorTextFocus"
     },
     {
         "key": "alt+x",
@@ -748,11 +733,6 @@
         "command": "-editor.action.clipboardCopyAction"
     },
     {
-        "key": "cmd+c",
-        "command": "-multiclip.copy",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "cmd+d",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
@@ -838,11 +818,6 @@
     },
     {
         "key": "cmd+v",
-        "command": "-multiclip.regularPaste",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
     },
@@ -866,7 +841,7 @@
     },
     {
         "key": "cmd+w",
-        "command": "multiclip.copy",
+        "command": "yac.copy",
         "when": "editorTextFocus"
     },
     {
@@ -884,16 +859,11 @@
     },
     {
         "key": "cmd+x",
-        "command": "-multiclip.cut",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+x",
         "command": "workbench.action.showCommands"
     },
     {
         "key": "cmd+y",
-        "command": "multiclip.paste"
+        "command": "yac.paste"
     },
     {
         "key": "ctrl+shift+-",
@@ -1283,11 +1253,6 @@
     },
     {
         "key": "shift+alt+c",
-        "command": "-multiclip.copyMerge",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+c",
         "command": "editor.showCallHierarchy",
         "when": "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor"
     },
@@ -1429,16 +1394,6 @@
         "command": "editor.action.peekTypeDefinition"
     },
     {
-        "key": "shift+alt+v",
-        "command": "-multiclip.paste",
-        "when": "editorTextFocus && editorLangId != 'markdown'"
-    },
-    {
-        "key": "shift+alt+x",
-        "command": "-multiclip.cutMerge",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "shift+alt+y",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
@@ -1464,11 +1419,7 @@
         "key": "shift+cmd+b",
         "command": "cursorWordEndLeftSelect"
     },
-    {
-        "key": "shift+cmd+c",
-        "command": "-multiclip.copyMerge",
-        "when": "editorTextFocus"
-    },
+    
     {
         "key": "shift+cmd+c",
         "command": "editor.showCallHierarchy",
@@ -1605,16 +1556,6 @@
     {
         "key": "shift+cmd+t",
         "command": "editor.action.peekTypeDefinition"
-    },
-    {
-        "key": "shift+cmd+v",
-        "command": "-multiclip.paste",
-        "when": "editorTextFocus && editorLangId != 'markdown'"
-    },
-    {
-        "key": "shift+cmd+x",
-        "command": "-multiclip.cutMerge",
-        "when": "editorTextFocus"
     },
     {
         "key": "shift+cmd+y",
@@ -1830,7 +1771,7 @@
     },
     {
         "key": "ctrl+x y",
-        "command": "multiclip.list"
+        "command": "yac.pickAndPaste"
     },
     {
         "key": "ctrl+x ctrl+f",
