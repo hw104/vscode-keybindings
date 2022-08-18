@@ -645,6 +645,19 @@
         "command": "yac.paste"
     },
     {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-workbench.action.terminal.sizeToContentWidth",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+        "key": "alt+z",
+        "command": "undo"
+    },
+    {
         "key": "cmd+.",
         "command": "-editor.action.quickFix",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
@@ -872,6 +885,19 @@
     {
         "key": "cmd+y",
         "command": "yac.paste"
+    },
+    {
+        "key": "cmd+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "cmd+z",
+        "command": "-workbench.action.terminal.sizeToContentWidth",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+z",
+        "command": "undo"
     },
     {
         "key": "ctrl+shift+-",
