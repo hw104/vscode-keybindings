@@ -1425,6 +1425,10 @@
         "when": "workbench.panel.repl.view.active"
     },
     {
+        "key": "shift+alt+z",
+        "command": "redo"
+    },
+    {
         "key": "shift+cmd+.",
         "command": "-breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible"
@@ -1591,6 +1595,10 @@
         "key": "shift+cmd+y",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
+    },
+    {
+        "key": "shift+cmd+z",
+        "command": "redo"
     },
     {
         "key": "alt+alt+[",
