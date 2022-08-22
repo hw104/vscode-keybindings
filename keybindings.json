@@ -445,7 +445,13 @@
     },
     {
         "key": "alt+1",
-        "command": "workbench.view.explorer"
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.view.explorer",
+        "when": "!filesExplorerFocus"
     },
     {
         "key": "alt+2",
@@ -687,7 +693,13 @@
     },
     {
         "key": "cmd+1",
-        "command": "workbench.view.explorer"
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.view.explorer",
+        "when": "!filesExplorerFocus"
     },
     {
         "key": "cmd+2",
