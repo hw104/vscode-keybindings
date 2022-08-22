@@ -1727,6 +1727,16 @@
         "command": "workbench.action.showAllSymbols"
     },
     {
+        "key": "ctrl+alt+shift+.",
+        "command": "yafa.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+cmd+shift+.",
+        "command": "yafa.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
         "key": "ctrl ctrl",
         "command": "workbench.action.showCommands"
     },
