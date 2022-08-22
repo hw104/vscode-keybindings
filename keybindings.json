@@ -576,6 +576,11 @@
     },
     {
         "key": "alt+n",
+        "command": "editor.gotoNextFold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
     },
@@ -591,6 +596,11 @@
     {
         "key": "alt+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "alt+p",
+        "command": "editor.gotoPreviousFold",
+        "when": "editorFocus"
     },
     {
         "key": "alt+right",
@@ -824,6 +834,11 @@
     },
     {
         "key": "cmd+n",
+        "command": "editor.gotoNextFold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus\""
     },
@@ -839,6 +854,11 @@
     {
         "key": "cmd+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "editor.gotoPreviousFold",
+        "when": "editorFocus"
     },
     {
         "key": "cmd+right",
