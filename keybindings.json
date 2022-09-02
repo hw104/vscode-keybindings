@@ -210,6 +210,11 @@
     },
     {
         "key": "ctrl+g",
+        "command": "editor.action.inlineSuggest.hide",
+        "when": "inlineSuggestionVisible"
+    },
+    {
+        "key": "ctrl+g",
         "command": "editor.closeTestPeek",
         "when": "testing.isInPeek && !config.editor.stablePeek || testing.isPeekVisible && !config.editor.stablePeek"
     },
@@ -217,6 +222,16 @@
         "key": "ctrl+g",
         "command": "editor.debug.action.closeExceptionWidget",
         "when": "exceptionWidgetVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "hideCodeActionWidget",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "ctrl+h",
@@ -263,6 +278,11 @@
     },
     {
         "key": "ctrl+n",
+        "command": "selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+n",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
@@ -293,6 +313,11 @@
         "key": "ctrl+p",
         "command": "list.focusUp",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
     },
     {
         "key": "ctrl+p",
