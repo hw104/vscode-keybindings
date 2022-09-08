@@ -657,10 +657,6 @@
     },
     {
         "key": "alt+w",
-        "command": "editor.action.clipboardCopyAction"
-    },
-    {
-        "key": "alt+w",
         "command": "yac.copy",
         "when": "editorTextFocus"
     },
@@ -912,10 +908,6 @@
         "key": "cmd+w",
         "command": "-workbench.action.closeWindow",
         "when": "!editorIsOpen && !multipleEditorGroups"
-    },
-    {
-        "key": "cmd+w",
-        "command": "editor.action.clipboardCopyAction"
     },
     {
         "key": "cmd+w",
