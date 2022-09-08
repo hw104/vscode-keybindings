@@ -406,12 +406,13 @@
     },
     {
         "key": "ctrl+w",
-        "command": "editor.action.clipboardCutAction"
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
     },
     {
         "key": "ctrl+w",
-        "command": "filesExplorer.cut",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+        "command": "yac.cut",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+x",
@@ -420,6 +421,11 @@
     {
         "key": "ctrl+y",
         "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
     {
         "key": "ctrl+y",
@@ -654,6 +660,11 @@
         "key": "alt+w",
         "command": "-workbench.action.closeWindow",
         "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "alt+w",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
     },
     {
         "key": "alt+w",
@@ -908,6 +919,11 @@
         "key": "cmd+w",
         "command": "-workbench.action.closeWindow",
         "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "cmd+w",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
     },
     {
         "key": "cmd+w",
