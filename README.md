@@ -8,6 +8,15 @@
   - [File](#file)
   - [Editor](#editor)
 - [IDE Features](#ide-features)
+  - [Basic rules](#basic-rules)
+  - [Common](#common)
+  - [Code Operations](#code-operations)
+  - [Jump](#jump)
+  - [Inspects](#inspects)
+  - [Folding](#folding)
+  - [Views](#views)
+  - [Git Operations](#git-operations)
+  - [Misc](#misc)
 
 ## Principles
 
@@ -74,7 +83,7 @@
 
 ## IDE Features
 
-### Basic rule
+### Basic rules
 
 - <kbd>ctrl</kbd> + <kbd>?</kbd>: [Common](#common)
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>:
@@ -122,7 +131,7 @@
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>e</kbd>: Go to (E)ditor
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>j</kbd>: Open Breadcrumbs and Selet and (J)ump
 
-### Display Inspect or Peek Informations
+### Inspects
 
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>d</kbd>: Peek (D)efinition
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>i</kbd>: Peek (I)mplementations
@@ -132,7 +141,7 @@
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>: (P)arameter Hints
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>c</kbd>: Show (C)all Hierarchy
 
-### Code Folding
+### Folding
 
 - <kbd>ctrl</kbd> + <kbd>.</kbd>: Fold
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>.</kbd>: Fold All
