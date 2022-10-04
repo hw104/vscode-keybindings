@@ -446,6 +446,11 @@
         "when": "textInputFocus"
     },
     {
+        "key": "ctrl+v",
+        "command": "list.scrollDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
         "key": "ctrl+w",
         "command": "-workbench.action.switchWindow"
     },
@@ -691,6 +696,11 @@
         "key": "alt+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
+    },
+    {
+        "key": "alt+v",
+        "command": "list.scrollUp",
+        "when": "listFocus && !inputFocus"
     },
     {
         "key": "alt+w",
@@ -950,6 +960,11 @@
         "key": "cmd+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+v",
+        "command": "list.scrollUp",
+        "when": "listFocus && !inputFocus"
     },
     {
         "key": "cmd+w",
