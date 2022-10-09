@@ -304,7 +304,7 @@
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.navigateToLastEditLocation",
+        "command": "cursor-ninja.scrollToCenterCursor",
         "when": "editorFocus"
     },
     {
@@ -397,6 +397,11 @@
         "key": "ctrl+s",
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
     },
     {
         "key": "ctrl+space",
@@ -657,7 +662,7 @@
     },
     {
         "key": "alt+n",
-        "command": "editor.gotoNextFold",
+        "command": "cursor-ninja.jumpIndentDown",
         "when": "editorFocus"
     },
     {
@@ -680,7 +685,7 @@
     },
     {
         "key": "alt+p",
-        "command": "editor.gotoPreviousFold",
+        "command": "cursor-ninja.jumpIndentUp",
         "when": "editorFocus"
     },
     {
@@ -921,7 +926,7 @@
     },
     {
         "key": "cmd+n",
-        "command": "editor.gotoNextFold",
+        "command": "cursor-ninja.jumpIndentDown",
         "when": "editorFocus"
     },
     {
@@ -944,7 +949,7 @@
     },
     {
         "key": "cmd+p",
-        "command": "editor.gotoPreviousFold",
+        "command": "cursor-ninja.jumpIndentUp",
         "when": "editorFocus"
     },
     {
