@@ -1966,6 +1966,10 @@
         "command": "workbench.action.tasks.runTask"
     },
     {
+        "key": "ctrl+x v",
+        "command": "workbench.action.openView"
+    },
+    {
         "key": "ctrl+x w",
         "command": "workbench.action.files.saveAs"
     },
