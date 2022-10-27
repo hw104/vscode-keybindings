@@ -14,7 +14,7 @@
   - [Jump](#jump)
   - [Inspects](#inspects)
   - [Folding](#folding)
-  - [Views](#views)
+  - [Views / Focus](#views--focus)
   - [Git Operations](#git-operations)
   - [Misc](#misc)
 
@@ -22,11 +22,15 @@
 
 - Easy to remember.
 - Easy to type. Keep fingers close to home position.
-- For keyboards with the <kbd>ctrl</kbd> key next to the <kbd>a</kbd> key and the <kbd>shift</kbd> and <kbd>alt</kbd> keys near each thumb.
+- For keyboards with the <kbd>ctrl</kbd> key next to the <kbd>a</kbd> key and the <kbd>shift</kbd> and <kbd>alt</kbd>(or<kbd>cmd</kbd>) keys near each thumb.
 
-## Editing
+## Keyboard Shortcuts
 
-### Cursor Moving
+> ℹ️ For mac, <kbd>alt</kbd> is <kbd>cmd</kbd>.
+
+### Editing
+
+#### Cursor Moving
 
 - <kbd>ctrl</kbd> + <kbd>n</kbd>: ⬆️ Cursor (N)ext Line. Cursor down
 - <kbd>ctrl</kbd> + <kbd>p</kbd>: ⬇️ Cursor (P)revious Line. Cursor up
@@ -38,7 +42,7 @@
 - <kbd>ctrl</kbd> + <kbd>[</kbd>: `Go to Bracket`
 - <kbd>ctrl</kbd> + <kbd>v</kbd>: ⏬ Page down. `cursorPageDown`
 
-### Deletion
+#### Deletion
 
 - <kbd>ctrl</kbd> + <kbd>h</kbd>: Delete left
 - <kbd>alt</kbd> + <kbd>h</kbd>: Delete left word
@@ -47,7 +51,7 @@
 - <kbd>ctrl</kbd> + <kbd>k</kbd>: `Delete All Right`
 - <kbd>alt</kbd> + <kbd>k</kbd>: `Delete All Left`
 
-### Selection
+#### Selection
 
 - <kbd>ctrl</kbd> + <kbd>;</kbd>:
   Expand Selection. `editor.action.smartSelect.grow`
@@ -57,7 +61,7 @@
 - <kbd>ctrl</kbd> + <kbd>space</kbd>: Start or End Selection
 - <kbd>ctrl</kbd> + <kbd>g</kbd>: `cancelSelection`
 
-### Copy / Paste
+#### Copy / Paste
 
 - <kbd>ctrl</kbd> + <kbd>w</kbd>: Cut
 - <kbd>alt</kbd> + <kbd>w</kbd>: Copy
@@ -65,13 +69,13 @@
 - <kbd>alt</kbd> + <kbd>y</kbd>: Cyclic paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>y</kbd>: Select and paste from history with [multiclip](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 
-### File
+#### File
 
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>f</kbd>: Go to File...
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>ctrl</kbd> + <kbd>f</kbd>: Open File
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>s</kbd>: Save All
 
-### Editor
+#### Editor
 
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>2</kbd>: Split Editor Vertically
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>3</kbd>: Split Editor horizontally
@@ -81,9 +85,9 @@
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>0</kbd>: Close All Editor
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>0</kbd>: Close Other Editor
 
-## IDE Features
+### IDE Features
 
-### Basic rules
+#### Basic rules
 
 - <kbd>ctrl</kbd> + <kbd>?</kbd>: [Common](#common)
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>:
@@ -91,12 +95,12 @@
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>?</kbd>: [Jump](#jump)
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>?</kbd>:
   [Display, Inspect or Peek informations](#display-inspect-or-peek-informations)
-- <kbd>alt</kbd> + <kbd>number</kbd>: [Code Folding](#code-folding)
-- <kbd>alt</kbd> + <kbd>number</kbd>: [Views](#views)
+- <kbd>ctrl</kbd> + <kbd>.</kbd> or <kbd>,</kbd>: [Code Folding](#folding)
+- <kbd>alt</kbd> + <kbd>number</kbd>: [Views / Focus](#views--focus)
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>number</kbd>: [Git Operations](#git-operations)
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>?</kbd>: [Misc](#misc)
 
-### Common
+#### Common
 
 - <kbd>ctrl</kbd> + <kbd>/</kbd>: Suggest
 - <kbd>ctrl</kbd> + <kbd>r</kbd>: (R)ename Symbol
@@ -104,7 +108,7 @@
 - <kbd>ctrl</kbd> + <kbd>c</kbd>: Toggle Line (C)omment
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>c</kbd>: Toggle Block (C)omment
 
-### Code Operations
+#### Code Operations
 
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>: (R)efactor...
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>l</kbd>: (L)int, i.e. Format Document
@@ -112,7 +116,7 @@
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>s</kbd>: (S)ource ACtion...
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>o</kbd>: Organize Imports
 
-### Jump
+#### Jump
 
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>b</kbd>: Go (B)ack
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd>: Go (F)orward
@@ -121,17 +125,17 @@
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>i</kbd>: Go to (I)mplementations
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>r</kbd>: Go to (R)eferences
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd>: Go to (T)ype Definition
-- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>n</kbd>: Go to (N)ext Problem
-- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>n</kbd>: Go to (N)ext Problem in Files
-- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>: Go to (P)revious Problem
-- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>: Go to (P)revious Problem in Files
+- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>e</kbd>: Go to Next Problem ((E)rror, Warning, Info)
+- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd>+ <kbd>e</kbd>: Go to Next Problem in Files((E)rror, Warning, Info)
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>s</kbd>: Go to (S)ymbol in Editor...
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>s</kbd>: Go to (S)ymbol in Workspace...
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>l</kbd>: Go to (L)ast Edit Location
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>e</kbd>: Go to (E)ditor
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>j</kbd>: Open Breadcrumbs and Selet and (J)ump
+- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>n</kbd>: Go to (n)ext edge of current indent block
+- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>n</kbd>: Go to (p)rev edge of current indent block
 
-### Inspects
+#### Inspects
 
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>d</kbd>: Peek (D)efinition
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>i</kbd>: Peek (I)mplementations
@@ -141,16 +145,16 @@
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>: (P)arameter Hints
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>c</kbd>: Show (C)all Hierarchy
 
-### Folding
+#### Folding
 
 - <kbd>ctrl</kbd> + <kbd>.</kbd>: Fold
-- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>.</kbd>: Fold All
-- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>.</kbd>: Fold Recursively
 - <kbd>ctrl</kbd> + <kbd>,</kbd>: Unfold
+- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>.</kbd>: Fold All
 - <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>,</kbd>: Unfold All
+- <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>.</kbd>: Fold Recursively
 - <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>,</kbd>: Unfold Recursively
 
-### Views
+#### Views / Focus
 
 - <kbd>alt</kbd> + <kbd>0</kbd>: Toggle Side Bar
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>0</kbd>: Toggle Panel Bar
@@ -160,8 +164,10 @@
 - <kbd>alt</kbd> + <kbd>5</kbd>: Toggle Problems
 - <kbd>alt</kbd> + <kbd>8</kbd>: Toggle Terminal
 - <kbd>alt</kbd> + <kbd>9</kbd>: Toggle Source Control
+- <kbd>alt</kbd> + e: Focus (E)ditor
 
-### Git Operations
+
+#### Git Operations
 
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>4</kbd>: View Git Graph (git log)
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>5</kbd>: Git Checkout to...
@@ -171,7 +177,7 @@
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>9</kbd>: Git Push
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>0</kbd>: Git Discard All Changes
 
-### Misc
+#### Misc
 
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>r</kbd>: Run Debugging
 - <kbd>ctrl</kbd> + <kbd>x</kbd>, <kbd>t</kbd>: Run Task
