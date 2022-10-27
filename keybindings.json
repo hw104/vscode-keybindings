@@ -1242,8 +1242,16 @@
         "command": "workbench.action.navigateToLastEditLocation"
     },
     {
+        "key": "ctrl+alt+n",
+        "command": "cursor-ninja.jumpEdgeOfIndentDown"
+    },
+    {
         "key": "ctrl+alt+o",
         "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "cursor-ninja.jumpEdgeOfIndentUp"
     },
     {
         "key": "ctrl+alt+r",
@@ -1348,8 +1356,16 @@
         "command": "workbench.action.navigateToLastEditLocation"
     },
     {
+        "key": "ctrl+cmd+n",
+        "command": "cursor-ninja.jumpEdgeOfIndentDown"
+    },
+    {
         "key": "ctrl+cmd+o",
         "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "cursor-ninja.jumpEdgeOfIndentUp"
     },
     {
         "key": "ctrl+cmd+r",
@@ -1503,11 +1519,6 @@
         "key": "shift+alt+i",
         "command": "editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    },
-    {
-        "key": "shift+alt+n",
-        "command": "cursor-ninja.jumpEdgeOfIndentDown",
-        "when": "editorFocus"
     },
     {
         "key": "shift+alt+n",
@@ -1685,11 +1696,6 @@
         "key": "shift+cmd+i",
         "command": "editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    },
-    {
-        "key": "shift+cmd+n",
-        "command": "cursor-ninja.jumpEdgeOfIndentDown",
-        "when": "editorFocus"
     },
     {
         "key": "shift+cmd+n",
