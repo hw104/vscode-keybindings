@@ -158,13 +158,14 @@
 
 - <kbd>alt</kbd> + <kbd>0</kbd>: Toggle Side Bar
 - <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>0</kbd>: Toggle Panel Bar
-- <kbd>alt</kbd> + <kbd>1</kbd>: Show File Explorer
-- <kbd>alt</kbd> + <kbd>2</kbd>: Show Comment Anchors
+- <kbd>alt</kbd> + <kbd>1</kbd>: Focus File Explorer
+- <kbd>alt</kbd> + <kbd>2</kbd>: Focus Comment Anchors
+- <kbd>alt</kbd> + <kbd>3</kbd>: Focus Search View
 - <kbd>alt</kbd> + <kbd>4</kbd>: Toggle Debug Console
 - <kbd>alt</kbd> + <kbd>5</kbd>: Toggle Problems
 - <kbd>alt</kbd> + <kbd>8</kbd>: Toggle Terminal
 - <kbd>alt</kbd> + <kbd>9</kbd>: Toggle Source Control
-- <kbd>alt</kbd> + e: Focus (E)ditor
+- <kbd>alt</kbd> + <kbd>e</kbd>: Focus (E)ditor
 
 
 #### Git Operations
