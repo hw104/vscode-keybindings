@@ -609,6 +609,10 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
+        "key": "alt+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
         "key": "alt+enter",
         "command": "-editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly"
@@ -871,6 +875,10 @@
         "key": "cmd+d",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
     },
     {
         "key": "cmd+enter",
@@ -1200,7 +1208,7 @@
     },
     {
         "key": "ctrl+alt+e",
-        "command": "workbench.action.focusActiveEditorGroup"
+        "command": "editor.action.marker.next"
     },
     {
         "key": "ctrl+alt+f",
@@ -1234,17 +1242,8 @@
         "command": "workbench.action.navigateToLastEditLocation"
     },
     {
-        "key": "ctrl+alt+n",
-        "command": "editor.action.marker.next"
-    },
-    {
         "key": "ctrl+alt+o",
         "command": "outline.focus"
-    },
-    {
-        "key": "ctrl+alt+p",
-        "command": "editor.action.marker.prev",
-        "when": "editorFocus"
     },
     {
         "key": "ctrl+alt+r",
@@ -1315,7 +1314,7 @@
     },
     {
         "key": "ctrl+cmd+e",
-        "command": "workbench.action.focusActiveEditorGroup"
+        "command": "editor.action.marker.next"
     },
     {
         "key": "ctrl+cmd+f",
@@ -1349,17 +1348,8 @@
         "command": "workbench.action.navigateToLastEditLocation"
     },
     {
-        "key": "ctrl+cmd+n",
-        "command": "editor.action.marker.next"
-    },
-    {
         "key": "ctrl+cmd+o",
         "command": "outline.focus"
-    },
-    {
-        "key": "ctrl+cmd+p",
-        "command": "editor.action.marker.prev",
-        "when": "editorFocus"
     },
     {
         "key": "ctrl+cmd+r",
@@ -1513,6 +1503,11 @@
         "key": "shift+alt+i",
         "command": "editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+alt+n",
+        "command": "cursor-ninja.jumpEdgeOfIndentDown",
+        "when": "editorFocus"
     },
     {
         "key": "shift+alt+n",
@@ -1693,6 +1688,11 @@
     },
     {
         "key": "shift+cmd+n",
+        "command": "cursor-ninja.jumpEdgeOfIndentDown",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+n",
         "command": "explorer.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
@@ -1783,6 +1783,10 @@
         "command": "-workbench.action.files.saveAll"
     },
     {
+        "key": "ctrl+shift+alt+e",
+        "command": "editor.action.marker.nextInFiles"
+    },
+    {
         "key": "ctrl+shift+alt+f",
         "command": "editor.action.fixAll"
     },
@@ -1792,21 +1796,17 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+alt+n",
-        "command": "editor.action.marker.nextInFiles"
-    },
-    {
         "key": "ctrl+shift+alt+o",
         "command": "dartFlutterOutline.focus",
         "when": "dart-code:anyFlutterProjectLoaded"
     },
     {
-        "key": "ctrl+shift+alt+p",
-        "command": "editor.action.marker.prevInFiles"
-    },
-    {
         "key": "ctrl+shift+alt+s",
         "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+shift+cmd+e",
+        "command": "editor.action.marker.nextInFiles"
     },
     {
         "key": "ctrl+shift+cmd+f",
@@ -1818,17 +1818,9 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+cmd+n",
-        "command": "editor.action.marker.nextInFiles"
-    },
-    {
         "key": "ctrl+shift+cmd+o",
         "command": "dartFlutterOutline.focus",
         "when": "dart-code:anyFlutterProjectLoaded"
-    },
-    {
-        "key": "ctrl+shift+cmd+p",
-        "command": "editor.action.marker.prevInFiles"
     },
     {
         "key": "ctrl+shift+cmd+s",
