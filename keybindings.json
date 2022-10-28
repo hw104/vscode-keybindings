@@ -741,7 +741,7 @@
     {
         "key": "alt+w",
         "command": "yac.copy",
-        "when": "editorTextFocus"
+        "when": "inputFocus || !filesExplorerFocus"
     },
     {
         "key": "alt+x",
@@ -1017,7 +1017,7 @@
     {
         "key": "cmd+w",
         "command": "yac.copy",
-        "when": "editorTextFocus"
+        "when": "inputFocus || !filesExplorerFocus"
     },
     {
         "key": "cmd+x",
