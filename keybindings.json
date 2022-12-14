@@ -1949,6 +1949,11 @@
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
+        "key": "ctrl+x e",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
         "key": "ctrl+x f",
         "command": "workbench.action.quickOpen"
     },
