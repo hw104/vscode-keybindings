@@ -574,6 +574,10 @@
         "when": "workbench.panel.markers.view.active"
     },
     {
+        "key": "alt+6",
+        "command": "workbench.view.extension.bookmarks"
+    },
+    {
         "key": "alt+8",
         "command": "-workbench.action.focusEighthEditorGroup"
     },
@@ -848,6 +852,10 @@
         "key": "cmd+5",
         "command": "workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.view.extension.bookmarks"
     },
     {
         "key": "cmd+8",
@@ -1946,7 +1954,8 @@
     },
     {
         "key": "ctrl+x b",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+x e",
