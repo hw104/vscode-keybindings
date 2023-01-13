@@ -522,6 +522,11 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
+        "key": "alt+/",
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
         "key": "alt+0",
         "command": "workbench.action.toggleSidebarVisibility"
     },
@@ -800,6 +805,11 @@
         "key": "cmd+/",
         "command": "editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+/",
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "cmd+0",
@@ -2021,6 +2031,11 @@
     {
         "key": "ctrl+x ctrl+s",
         "command": "workbench.action.files.save"
+    },
+    {
+        "key": "shift+space space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
         "key": "alt+k alt+[",
