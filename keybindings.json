@@ -2033,11 +2033,6 @@
         "command": "workbench.action.files.save"
     },
     {
-        "key": "shift+space space",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    },
-    {
         "key": "alt+k alt+[",
         "command": "-editor.foldRecursively",
         "when": "editorTextFocus && foldingEnabled"
