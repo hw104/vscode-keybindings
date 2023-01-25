@@ -2033,6 +2033,11 @@
         "command": "workbench.action.files.save"
     },
     {
+        "key": "ctrl+x ctrl+t",
+        "command": "testing.debugCurrentFile",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "alt+k alt+[",
         "command": "-editor.foldRecursively",
         "when": "editorTextFocus && foldingEnabled"
