@@ -77,13 +77,13 @@
     },
     {
         "key": "ctrl+\\",
-        "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible && !editorReadonly"
     },
     {
         "key": "ctrl+\\",
-        "command": "editor.action.inlineSuggest.showNext",
-        "when": "inlineSuggestionVisible && !editorReadonly"
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
     },
     {
         "key": "ctrl+`",
@@ -272,6 +272,11 @@
         "key": "ctrl+g",
         "command": "list.clear",
         "when": "listFocus && listHasSelectionOrFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "list.closeFind",
+        "when": "listFocus && treeFindOpen"
     },
     {
         "key": "ctrl+g",
@@ -614,7 +619,8 @@
     },
     {
         "key": "alt+b",
-        "command": "cursorWordEndLeft"
+        "command": "cursorWordEndLeft",
+        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "alt+backspace",
@@ -651,7 +657,8 @@
     },
     {
         "key": "alt+f",
-        "command": "cursorWordStartRight"
+        "command": "cursorWordStartRight",
+        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "alt+f12",
@@ -837,13 +844,13 @@
     },
     {
         "key": "cmd+\\",
-        "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible && !editorReadonly"
     },
     {
         "key": "cmd+\\",
-        "command": "editor.action.inlineSuggest.showNext",
-        "when": "inlineSuggestionVisible && !editorReadonly"
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
     },
     {
         "key": "cmd+0",
@@ -923,7 +930,8 @@
     },
     {
         "key": "cmd+b",
-        "command": "cursorWordEndLeft"
+        "command": "cursorWordEndLeft",
+        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "cmd+backspace",
@@ -960,7 +968,8 @@
     },
     {
         "key": "cmd+f",
-        "command": "cursorWordStartRight"
+        "command": "cursorWordStartRight",
+        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "cmd+f12",
@@ -1892,6 +1901,11 @@
     {
         "key": "ctrl+shift+alt+s",
         "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+shift+cmd+\\",
+        "command": "interactiveEditor.start",
+        "when": "interactiveEditorHasProvider && !editorReadonly"
     },
     {
         "key": "ctrl+shift+cmd+e",
