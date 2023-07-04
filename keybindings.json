@@ -2205,5 +2205,10 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
