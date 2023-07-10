@@ -1882,6 +1882,10 @@
         "command": "editor.action.peekTypeDefinition"
     },
     {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
         "key": "shift+cmd+y",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
@@ -2250,6 +2254,10 @@
     {
         "key": "ctrl+x y",
         "command": "yac.list"
+    },
+    {
+        "key": "ctrl+x ctrl+c",
+        "command": "workbench.action.closeWindow"
     },
     {
         "key": "ctrl+x ctrl+f",
