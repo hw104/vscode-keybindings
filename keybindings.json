@@ -742,7 +742,7 @@
     },
     {
         "key": "alt+n",
-        "command": "cursor-ninja.jumpIndentDown",
+        "command": "cursor-ninja.jumpToNextSiblingSymbol",
         "when": "editorFocus"
     },
     {
@@ -765,7 +765,7 @@
     },
     {
         "key": "alt+p",
-        "command": "cursor-ninja.jumpIndentUp",
+        "command": "cursor-ninja.jumpToPreviousSiblingSymbol",
         "when": "editorFocus"
     },
     {
@@ -1053,7 +1053,7 @@
     },
     {
         "key": "cmd+n",
-        "command": "cursor-ninja.jumpIndentDown",
+        "command": "cursor-ninja.jumpToNextSiblingSymbol",
         "when": "editorFocus"
     },
     {
@@ -1076,7 +1076,7 @@
     },
     {
         "key": "cmd+p",
-        "command": "cursor-ninja.jumpIndentUp",
+        "command": "cursor-ninja.jumpToPreviousSiblingSymbol",
         "when": "editorFocus"
     },
     {
@@ -1367,7 +1367,7 @@
     },
     {
         "key": "ctrl+alt+n",
-        "command": "cursor-ninja.jumpEdgeOfIndentDown"
+        "command": "cursor-ninja.jumpToNextSymbol"
     },
     {
         "key": "ctrl+alt+o",
@@ -1375,7 +1375,7 @@
     },
     {
         "key": "ctrl+alt+p",
-        "command": "cursor-ninja.jumpEdgeOfIndentUp"
+        "command": "cursor-ninja.jumpToPreviousSymbol"
     },
     {
         "key": "ctrl+alt+r",
@@ -1481,7 +1481,7 @@
     },
     {
         "key": "ctrl+cmd+n",
-        "command": "cursor-ninja.jumpEdgeOfIndentDown"
+        "command": "cursor-ninja.jumpToNextSymbol"
     },
     {
         "key": "ctrl+cmd+o",
@@ -1489,7 +1489,7 @@
     },
     {
         "key": "ctrl+cmd+p",
-        "command": "cursor-ninja.jumpEdgeOfIndentUp"
+        "command": "cursor-ninja.jumpToPreviousSymbol"
     },
     {
         "key": "ctrl+cmd+r",
@@ -2386,5 +2386,9 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
     }
 ]
