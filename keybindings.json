@@ -215,6 +215,11 @@
     },
     {
         "key": "ctrl+g",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    },
+    {
+        "key": "ctrl+g",
         "command": "editor.action.cancelSelectionAnchor",
         "when": "editorTextFocus && selectionAnchorSet"
     },
@@ -421,6 +426,11 @@
         "key": "ctrl+s",
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
     },
     {
         "key": "ctrl+s",
@@ -1087,6 +1097,10 @@
     {
         "key": "cmd+s",
         "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
     },
     {
         "key": "cmd+v",
@@ -2386,9 +2400,5 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
-    },
-    {
-        "key": "cmd+t",
-        "command": "-workbench.action.showAllSymbols"
     }
 ]
