@@ -672,7 +672,7 @@
     {
         "key": "alt+b",
         "command": "cursorWordEndLeft",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus"
     },
     {
         "key": "alt+backspace",
@@ -710,7 +710,7 @@
     {
         "key": "alt+f",
         "command": "cursorWordStartRight",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus"
     },
     {
         "key": "alt+f12",
@@ -983,7 +983,7 @@
     {
         "key": "cmd+b",
         "command": "cursorWordEndLeft",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus"
     },
     {
         "key": "cmd+backspace",
@@ -1021,7 +1021,7 @@
     {
         "key": "cmd+f",
         "command": "cursorWordStartRight",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus"
     },
     {
         "key": "cmd+f12",
