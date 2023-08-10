@@ -788,6 +788,10 @@
         "command": "-workbench.action.files.save"
     },
     {
+        "key": "alt+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
         "key": "alt+v",
         "command": "cursorPageUp",
         "when": "textInputFocus"
@@ -1709,6 +1713,10 @@
         "command": "editor.action.peekTypeDefinition"
     },
     {
+        "key": "shift+alt+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
         "key": "shift+alt+y",
         "command": "-workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
@@ -2020,14 +2028,6 @@
     },
     {
         "key": "shift shift",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "alt alt",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "cmd cmd",
         "command": "workbench.action.showCommands"
     },
     {
