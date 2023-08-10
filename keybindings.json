@@ -1,8 +1,23 @@
 [
     {
         "key": "enter",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "enter",
+        "command": "-editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
+    },
+    {
+        "key": "enter",
         "command": "-renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible && findInputFocussed"
     },
     {
         "key": "enter",
@@ -703,6 +718,16 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "alt+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible && findInputFocussed"
+    },
+    {
         "key": "alt+f",
         "command": "-actions.find",
         "when": "editorFocus || editorIsOpen"
@@ -791,6 +816,11 @@
         "key": "alt+s",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus && !findWidgetVisible"
     },
     {
         "key": "alt+t",
@@ -1023,6 +1053,16 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "cmd+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible && findInputFocussed"
+    },
+    {
         "key": "cmd+f",
         "command": "-actions.find",
         "when": "editorFocus || editorIsOpen"
@@ -1111,6 +1151,11 @@
         "key": "cmd+s",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "cmd+s",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus && !findWidgetVisible"
     },
     {
         "key": "cmd+t",
@@ -1577,6 +1622,11 @@
         "command": "workbench.action.togglePanel"
     },
     {
+        "key": "shift+alt+1",
+        "command": "-editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
         "key": "shift+alt+b",
         "command": "-workbench.action.tasks.build"
     },
@@ -1768,6 +1818,11 @@
         "command": "workbench.action.togglePanel"
     },
     {
+        "key": "shift+cmd+1",
+        "command": "-editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
         "key": "shift+cmd+b",
         "command": "-workbench.action.tasks.build"
     },
@@ -1946,6 +2001,16 @@
         "when": "editorTextFocus && foldingEnabled"
     },
     {
+        "key": "alt+alt+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "alt+alt+f",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
         "key": "alt+alt+s",
         "command": "-workbench.action.files.saveAll"
     },
@@ -1960,6 +2025,16 @@
         "when": "editorTextFocus && foldingEnabled"
     },
     {
+        "key": "alt+cmd+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "alt+cmd+f",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
         "key": "alt+cmd+s",
         "command": "-workbench.action.files.saveAll"
     },
@@ -1972,6 +2047,16 @@
         "key": "cmd+cmd+]",
         "command": "-editor.unfold",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+cmd+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "cmd+cmd+f",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
     },
     {
         "key": "cmd+cmd+s",
