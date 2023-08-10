@@ -788,6 +788,11 @@
         "command": "-workbench.action.files.save"
     },
     {
+        "key": "alt+s",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
         "key": "alt+t",
         "command": "-workbench.action.showAllSymbols"
     },
@@ -1103,6 +1108,11 @@
         "command": "-workbench.action.files.save"
     },
     {
+        "key": "cmd+s",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
         "key": "cmd+t",
         "command": "-workbench.action.showAllSymbols"
     },
@@ -1280,9 +1290,18 @@
         "command": "-workbench.action.newWindow"
     },
     {
+        "key": "ctrl+shift+n",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
         "key": "ctrl+shift+o",
         "command": "editor.action.organizeImports",
         "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.addSelectionToPreviousFindMatch"
     },
     {
         "key": "ctrl+shift+r",
