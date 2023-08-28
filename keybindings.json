@@ -1313,7 +1313,12 @@
     {
         "key": "ctrl+shift+l",
         "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly && editorHasSelection"
     },
     {
         "key": "ctrl+shift+l",
