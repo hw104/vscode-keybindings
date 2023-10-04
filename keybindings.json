@@ -91,6 +91,16 @@
         "command": "-workbench.action.splitEditor"
     },
     {
+        "key": "ctrl+\\",
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
+    },
+    {
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
     },
@@ -954,16 +964,6 @@
     },
     {
         "key": "cmd+\\",
-        "command": "editor.action.inlineSuggest.trigger",
-        "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
-    },
-    {
-        "key": "ctrl+\\",
-        "command": "editor.action.inlineSuggest.showNext",
-        "when": "inlineSuggestionVisible"
-    },
-    {
-        "key": "ctrl+\\",
         "command": "editor.action.inlineSuggest.trigger",
         "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
     },
