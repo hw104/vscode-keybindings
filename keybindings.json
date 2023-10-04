@@ -935,13 +935,13 @@
     },
     {
         "key": "cmd+\\",
-        "command": "editor.action.inlineSuggest.showNext",
-        "when": "inlineSuggestionVisible && !editorReadonly"
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
     },
     {
         "key": "cmd+\\",
-        "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible",
     },
     {
         "key": "cmd+0",
@@ -2181,11 +2181,6 @@
         "command": "git.push"
     },
     {
-        "key": "ctrl+j b",
-        "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+j e",
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
@@ -2324,11 +2319,6 @@
     {
         "key": "ctrl+x 9",
         "command": "git.push"
-    },
-    {
-        "key": "ctrl+x b",
-        "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+x e",
@@ -2509,5 +2499,48 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.panel.chatSidebar.copilot"
+    },
+    {
+        "key": "alt+7",
+        "command": "workbench.panel.chatSidebar.copilot"
+    },
+    {
+        "key": "alt+i",
+        "command": "inlineChat.start",
+        "when": "inlineChatHasProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "inlineChat.nextFromHistory",
+        "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorEnd"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "inlineChat.previousFromHistory",
+        "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorStart"
+    },
+    {
+        "key": "ctrl+x b",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debuggersAvailable && editorTextFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-python.refreshTensorBoard",
+        "when": "python.hasActiveTensorBoardSession"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-jupyter.refreshDataViewer",
+        "when": "isWorkspaceTrusted && jupyter.dataViewerActive"
     }
 ]
