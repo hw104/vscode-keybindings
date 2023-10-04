@@ -609,6 +609,16 @@
         "when": "terminalProcessSupported && terminalTabsFocus"
     },
     {
+        "key": "alt+\\",
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible"
+    },
+    {
+        "key": "alt+\\",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
+    },
+    {
         "key": "alt+0",
         "command": "workbench.action.toggleSidebarVisibility"
     },
