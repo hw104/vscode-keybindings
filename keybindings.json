@@ -2195,7 +2195,7 @@
     },
     {
         "key": "shift shift",
-        "command": "workbench.action.showCommands"
+        "command": "workbench.action.quickOpen"
     },
     {
         "key": "ctrl+j 0",
