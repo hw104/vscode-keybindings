@@ -675,10 +675,6 @@
         "command": "workbench.view.extension.bookmarks"
     },
     {
-        "key": "alt+7",
-        "command": "workbench.panel.chatSidebar.copilot"
-    },
-    {
         "key": "alt+8",
         "command": "-workbench.action.focusEighthEditorGroup"
     },
@@ -1032,10 +1028,6 @@
     {
         "key": "cmd+6",
         "command": "workbench.view.extension.bookmarks"
-    },
-    {
-        "key": "cmd+7",
-        "command": "workbench.panel.chatSidebar.copilot"
     },
     {
         "key": "cmd+8",
@@ -2562,5 +2554,13 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.panel.chat.view.copilot.focus"
     }
 ]
