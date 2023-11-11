@@ -675,6 +675,10 @@
         "command": "workbench.view.extension.bookmarks"
     },
     {
+        "key": "alt+7",
+        "command": "workbench.panel.chat.view.copilot.focus"
+    },
+    {
         "key": "alt+8",
         "command": "-workbench.action.focusEighthEditorGroup"
     },
@@ -1028,6 +1032,10 @@
     {
         "key": "cmd+6",
         "command": "workbench.view.extension.bookmarks"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.panel.chat.view.copilot.focus"
     },
     {
         "key": "cmd+8",
@@ -1798,6 +1806,10 @@
     },
     {
         "key": "shift+alt+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "shift+alt+n",
         "command": "explorer.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
@@ -1991,6 +2003,10 @@
         "key": "shift+cmd+i",
         "command": "editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
     },
     {
         "key": "shift+cmd+n",
@@ -2554,13 +2570,5 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
-    },
-    {
-        "key": "shift+cmd+n",
-        "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "cmd+7",
-        "command": "workbench.panel.chat.view.copilot.focus"
     }
 ]
