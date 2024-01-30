@@ -2249,10 +2249,10 @@
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
     },
-    {
-        "key": "ctrl+j f",
-        "command": "workbench.action.quickOpen"
-    },
+    // {
+        // "key": "ctrl+j f",
+        // "command": "workbench.action.quickOpen"
+    // },
     {
         "key": "ctrl+j o",
         "command": "togglePeekWidgetFocus",
@@ -2394,10 +2394,10 @@
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
     },
-    {
-        "key": "ctrl+x f",
-        "command": "workbench.action.quickOpen"
-    },
+    // {
+        // "key": "ctrl+x f",
+        // "command": "workbench.action.quickOpen"
+    // },
     {
         "key": "ctrl+x o",
         "command": "togglePeekWidgetFocus",
