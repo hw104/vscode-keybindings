@@ -1429,8 +1429,7 @@
     },
     {
         "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "editorFocus"
+        "command": "workbench.action.previousEditorInGroup"
     },
     {
         "key": "ctrl+alt+,",
@@ -2569,5 +2568,21 @@
     {
         "key": "cmd+k cmd+w",
         "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+j n",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+x n",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+j p",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+x p",
+        "command": "workbench.action.previousEditorInGroup"
     }
 ]
