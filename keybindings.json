@@ -492,8 +492,7 @@
     },
     {
         "key": "ctrl+tab",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "editorFocus"
+        "command": "workbench.action.nextEditorInGroup"
     },
     {
         "key": "ctrl+tab",
