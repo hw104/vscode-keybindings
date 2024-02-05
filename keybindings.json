@@ -626,16 +626,6 @@
         "command": "-workbench.action.focusFirstEditorGroup"
     },
     {
-        "key": "alt+1",
-        "command": "workbench.files.action.showActiveFileInExplorer",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "alt+1",
-        "command": "workbench.view.explorer",
-        "when": "!filesExplorerFocus"
-    },
-    {
         "key": "alt+2",
         "command": "-workbench.action.openEditorAtIndex2"
     },
@@ -987,12 +977,12 @@
     {
         "key": "cmd+1",
         "command": "workbench.files.action.showActiveFileInExplorer",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "editorFocus"
     },
     {
         "key": "cmd+1",
         "command": "workbench.view.explorer",
-        "when": "!filesExplorerFocus"
+        "when": "!editorFocus"
     },
     {
         "key": "cmd+2",
