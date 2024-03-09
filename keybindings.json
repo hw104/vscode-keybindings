@@ -1,14 +1,5 @@
 [
-    {
-        "key": "enter",
-        "command": "-editor.action.nextMatchFindAction",
-        "when": "editorFocus && findInputFocussed"
-    },
-    {
-        "key": "enter",
-        "command": "-editor.action.replaceOne",
-        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
-    },
+
     {
         "key": "enter",
         "command": "-renameFile",
@@ -17,7 +8,7 @@
     {
         "key": "enter",
         "command": "editor.action.replaceOne",
-        "when": "editorFocus && findWidgetVisible && findInputFocussed"
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
     },
     {
         "key": "enter",
@@ -728,7 +719,7 @@
     {
         "key": "alt+enter",
         "command": "editor.action.replaceAll",
-        "when": "editorFocus && findWidgetVisible && findInputFocussed"
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
     },
     {
         "key": "alt+f",
@@ -1087,7 +1078,7 @@
     {
         "key": "cmd+enter",
         "command": "editor.action.replaceAll",
-        "when": "editorFocus && findWidgetVisible && findInputFocussed"
+        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
     },
     {
         "key": "cmd+f",
