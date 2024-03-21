@@ -7,11 +7,6 @@
     },
     {
         "key": "enter",
-        "command": "editor.action.replaceOne",
-        "when": "editorFocus && findWidgetVisible && replaceInputFocussed"
-    },
-    {
-        "key": "enter",
         "command": "explorer.openAndPassFocus",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
     },
@@ -2565,5 +2560,19 @@
     {
         "key": "ctrl+x p",
         "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-editor.action.transposeLetters",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "editor.action.smartSelect.grow"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
     }
 ]
