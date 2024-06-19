@@ -96,7 +96,8 @@
     },
     {
         "key": "ctrl+0",
-        "command": "workbench.action.closeActiveEditor"
+        "command": "workbench.action.closeActiveEditor",
+        "when": "!inEditorsPicker"
     },
     {
         "key": "ctrl+a",
@@ -2581,5 +2582,30 @@
     {
         "key": "ctrl+j b",
         "command": "workbench.action.showAllEditors"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "references-view.findImplementations"
+    },
+    {
+        "key": "ctrl+x d",
+        "command": "git.openChange"
+    },
+    {
+        "key": "ctrl+j d",
+        "command": "git.openChange"
+    },
+    {
+        "key": "ctrl+j shift+d",
+        "command": "git.viewChanges"
+    },
+    {
+        "key": "ctrl+x shift+d",
+        "command": "git.viewChanges"
     }
 ]
