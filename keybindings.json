@@ -1427,10 +1427,6 @@
         "command": "git.checkout"
     },
     {
-        "key": "ctrl+alt+6",
-        "command": "git.fetchPrune"
-    },
-    {
         "key": "ctrl+alt+8",
         "command": "git.commitAll"
     },
@@ -1539,10 +1535,6 @@
     {
         "key": "ctrl+cmd+5",
         "command": "git.checkout"
-    },
-    {
-        "key": "ctrl+cmd+6",
-        "command": "git.fetchPrune"
     },
     {
         "key": "ctrl+cmd+8",
@@ -2206,10 +2198,6 @@
         "command": "git.checkout"
     },
     {
-        "key": "ctrl+j 6",
-        "command": "git.fetchPrune"
-    },
-    {
         "key": "ctrl+j 7",
         "command": "git.pull"
     },
@@ -2344,10 +2332,6 @@
     {
         "key": "ctrl+x 5",
         "command": "git.checkout"
-    },
-    {
-        "key": "ctrl+x 6",
-        "command": "git.fetchPrune"
     },
     {
         "key": "ctrl+x 7",
@@ -2593,7 +2577,7 @@
         "command": "references-view.findImplementations"
     },
     {
-        "key": "ctrl+x d",
+        "key": "ctrl+j 6",
         "command": "git.openChange"
     },
     {
@@ -2601,7 +2585,7 @@
         "command": "git.openChange"
     },
     {
-        "key": "ctrl+j shift+d",
+        "key": "ctrl+j shift+6",
         "command": "git.viewChanges"
     },
     {
@@ -2627,5 +2611,13 @@
         "key": "ctrl+shift+cmd+p",
         "command": "workbench.action.editor.previousChange",
         "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "ctrl+x 6",
+        "command": "git.openChange"
+    },
+    {
+        "key": "ctrl+x shift+6",
+        "command": "git.viewChanges"
     }
 ]
