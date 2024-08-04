@@ -1,0 +1,10 @@
+[
+  {
+    "from": "cmd",
+    "to": "alt"
+  },
+  {
+    "from": "ctrl+x",
+    "to": "ctrl+j"
+  }
+]

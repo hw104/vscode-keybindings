@@ -12,6 +12,11 @@ export const dumpKeybidingsPath = join(
   "..",
   keybindingsJson
 );
+export const aliasConfigPath = join(
+  dirname(fromFileUrl(import.meta.url)),
+  "..",
+  "aliases.json"
+);
 
 export function getVscodeUserConfigPath() {
   if (Deno.build.os === "darwin") {

@@ -1,5 +1,4 @@
 [
-
     {
         "key": "enter",
         "command": "-renameFile",
@@ -967,7 +966,17 @@
         "when": "editorFocus || filesExplorerFocus"
     },
     {
+        "key": "alt+1",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "editorFocus || filesExplorerFocus"
+    },
+    {
         "key": "cmd+1",
+        "command": "workbench.view.explorer",
+        "when": "!editorFocus && !filesExplorerFocus"
+    },
+    {
+        "key": "alt+1",
         "command": "workbench.view.explorer",
         "when": "!editorFocus && !filesExplorerFocus"
     },
@@ -2214,10 +2223,6 @@
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
     },
-    // {
-        // "key": "ctrl+j f",
-        // "command": "workbench.action.quickOpen"
-    // },
     {
         "key": "ctrl+j o",
         "command": "togglePeekWidgetFocus",
@@ -2350,10 +2355,6 @@
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
     },
-    // {
-        // "key": "ctrl+x f",
-        // "command": "workbench.action.quickOpen"
-    // },
     {
         "key": "ctrl+x o",
         "command": "togglePeekWidgetFocus",
@@ -2395,6 +2396,10 @@
     },
     {
         "key": "ctrl+x ctrl+c",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+j ctrl+c",
         "command": "workbench.action.closeWindow"
     },
     {
@@ -2560,6 +2565,10 @@
         "command": "workbench.action.joinAllGroups"
     },
     {
+        "key": "ctrl+j 1",
+        "command": "workbench.action.joinAllGroups"
+    },
+    {
         "key": "ctrl+x b",
         "command": "workbench.action.showAllEditors"
     },
@@ -2573,7 +2582,16 @@
         "when": "editorHasReferenceProvider"
     },
     {
+        "key": "shift+alt+r",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    {
         "key": "shift+cmd+i",
+        "command": "references-view.findImplementations"
+    },
+    {
+        "key": "shift+alt+i",
         "command": "references-view.findImplementations"
     },
     {
@@ -2593,7 +2611,16 @@
         "command": "git.viewChanges"
     },
     {
+        "key": "ctrl+j shift+d",
+        "command": "git.viewChanges"
+    },
+    {
         "key": "ctrl+shift+cmd+n",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+n",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
     },
@@ -2603,12 +2630,27 @@
         "when": "editorTextFocus && !textCompareEditorActive"
     },
     {
+        "key": "ctrl+shift+alt+n",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
         "key": "ctrl+shift+cmd+p",
         "command": "workbench.action.compareEditor.previousChange",
         "when": "textCompareEditorVisible"
     },
     {
+        "key": "ctrl+shift+alt+p",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
         "key": "ctrl+shift+cmd+p",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "ctrl+shift+alt+p",
         "command": "workbench.action.editor.previousChange",
         "when": "editorTextFocus && !textCompareEditorActive"
     },
