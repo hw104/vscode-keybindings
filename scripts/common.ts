@@ -22,3 +22,11 @@ export function getVscodeUserConfigPath() {
   }
   return `${Deno.env.get("HOME")}/.config/Code/User`;
 }
+
+export function decodeKey(key: string): string[][] {
+  return key.split(" ").map((step) => step.split("+"));
+}
+
+export function encodeKey(decoded: string[][]): string {
+  return decoded.map((step) => step.join("+")).join(" ");
+}
