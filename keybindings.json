@@ -2182,10 +2182,6 @@
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "ctrl+j 0",
-        "command": "git.cleanAll"
-    },
-    {
         "key": "ctrl+j 2",
         "command": "workbench.action.splitEditorOrthogonal"
     },
@@ -2314,7 +2310,7 @@
         "command": "-workbench.action.openGlobalKeybindings"
     },
     {
-        "key": "ctrl+x 0",
+        "key": "ctrl+x shift+0",
         "command": "git.cleanAll"
     },
     {
@@ -2661,5 +2657,17 @@
     {
         "key": "ctrl+x shift+6",
         "command": "git.viewChanges"
+    },
+    {
+        "key": "ctrl+x 0",
+        "command": "git.clean"
+    },
+    {
+        "key": "ctrl+j 0",
+        "command": "git.clean"
+    },
+    {
+        "key": "ctrl+j shift+0",
+        "command": "git.cleanAll"
     }
 ]
