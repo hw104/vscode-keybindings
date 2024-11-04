@@ -945,17 +945,27 @@
     {
         "key": "cmd+1",
         "command": "workbench.files.action.showActiveFileInExplorer",
-        "when": "editorFocus || filesExplorerFocus"
+        "when": "editorFocus"
     },
     {
         "key": "alt+1",
         "command": "workbench.files.action.showActiveFileInExplorer",
-        "when": "editorFocus || filesExplorerFocus"
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "filesExplorerFocus"
     },
     {
         "key": "cmd+1",
         "command": "workbench.view.explorer",
-        "when": "!editorFocus || !filesExplorerFocus"
+        "when": "!editorFocus && !filesExplorerFocus"
     },
     {
         "key": "alt+1",
