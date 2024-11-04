@@ -604,10 +604,6 @@
         "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
     },
     {
-        "key": "alt+0",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
         "key": "alt+1",
         "command": "-workbench.action.focusFirstEditorGroup"
     },
@@ -943,10 +939,6 @@
         "when": "!inlineSuggestionVisible && !editorReadonly && config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection"
     },
     {
-        "key": "cmd+0",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
         "key": "cmd+1",
         "command": "-workbench.action.focusFirstEditorGroup"
     },
@@ -963,7 +955,7 @@
     {
         "key": "cmd+1",
         "command": "workbench.view.explorer",
-        "when": "!editorFocus && !filesExplorerFocus"
+        "when": "!editorFocus || !filesExplorerFocus"
     },
     {
         "key": "alt+1",
@@ -2689,5 +2681,17 @@
     {
         "key": "ctrl+x 4",
         "command": "workbench.scm.history.focus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.maximizeEditorHideSidebar"
+    },
+    {
+        "key": "alt+0",
+        "command": "workbench.action.maximizeEditorHideSidebar"
     }
 ]
