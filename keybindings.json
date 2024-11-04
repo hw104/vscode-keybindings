@@ -2693,5 +2693,9 @@
     {
         "key": "alt+0",
         "command": "workbench.action.maximizeEditorHideSidebar"
+    },
+    {
+        "key": "alt+0",
+        "command": "workbench.action.maximizeEditorHideSidebar"
     }
 ]
