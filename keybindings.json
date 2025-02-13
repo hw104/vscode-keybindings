@@ -771,11 +771,6 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key": "alt+n",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
         "key": "alt+o",
         "command": "-workbench.action.files.openFileFolder"
     },
@@ -1008,7 +1003,7 @@
     },
     {
         "key": "cmd+6",
-        "command": "workbench.view.extension.bookmarks"
+        "command": "workbench.view.extension.test"
     },
     {
         "key": "cmd+7",
@@ -1134,11 +1129,6 @@
         "key": "cmd+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    {
-        "key": "cmd+n",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
     },
     {
         "key": "cmd+o",
@@ -2789,5 +2779,43 @@
     {
         "key": "cmd+t cmd+a",
         "command": "testing.debugAll"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.newInActiveWorkspace",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.terminal.newInActiveWorkspace",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "editorLangId =~ /^.+scriptreact$/ || editorLangId == 'html'"
+    },
+    {
+        "key": "ctrl+cmd+\\",
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.chat.open"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.action.chat.open"
+    },
+    {
+        "key": "shift+cmd+7",
+        "command": "workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "-workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
     }
 ]
