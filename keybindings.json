@@ -2639,30 +2639,34 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+cmd+p",
-        "command": "cursor-ninja.jumpToPreviousSiblingSymbol"
+        "key": "ctrl+alt+p",
+        "command": "cursor-ninja.jumpToPreviousSiblingSymbol",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+alt+p",
-        "command": "cursor-ninja.jumpToPreviousSiblingSymbol"
+        "command": "cursor-ninja.jumpToPreviousSiblingSymbol",
+        "when": "editorFocus"
     },
     {
         "key": "shift+ctrl+cmd+n",
-        "command": "cursor-ninja.jumpToNextParentSymbol",
+        "command": "cursor-ninja.jumpToNextSymbol",
         "when": "editorFocus"
     },
     {
         "key": "shift+ctrl+alt+n",
-        "command": "cursor-ninja.jumpToNextParentSymbol",
+        "command": "cursor-ninja.jumpToNextSymbol",
         "when": "editorFocus"
     },
     {
-        "key": "shift+ctrl+cmd+p",
-        "command": "cursor-ninja.jumpToPreviousParentSymbol"
+        "key": "ctrl+shift+alt+p",
+        "command": "cursor-ninja.jumpToPreviousSymbol",
+        "when": "editorFocus"
     },
     {
-        "key": "shift+ctrl+alt+p",
-        "command": "cursor-ninja.jumpToPreviousParentSymbol"
+        "key": "ctrl+shift+alt+p",
+        "command": "cursor-ninja.jumpToPreviousSymbol",
+        "when": "editorFocus"
     },
     {
         "key": "cmd+n",
@@ -2841,5 +2845,25 @@
         "key": "ctrl+space",
         "command": "-workbench.action.terminal.requestCompletions",
         "when": "config.terminal.integrated.suggest.enabled && terminalFocus && terminalProcessSupported && !terminalSuggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.debug.panel.action.clearReplAction",
+        "when": "focusedView == 'workbench.panel.repl.view'"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "cursor-ninja.jumpToPreviousSiblingSymbol",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+p",
+        "command": "cursor-ninja.jumpToPreviousSymbol",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+x shift+r",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode && !focusedSessionIsAttach"
     }
 ]
