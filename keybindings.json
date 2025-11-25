@@ -2794,6 +2794,10 @@
     },
     {
         "key": "ctrl+shift+w",
+        "command": "editor.action.surroundWithSnippet"
+    },
+    {
+        "key": "ctrl+shift+e",
         "command": "editor.emmet.action.wrapWithAbbreviation",
         "when": "editorLangId =~ /^.+scriptreact$/ || editorLangId == 'html'"
     },
