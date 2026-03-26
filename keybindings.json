@@ -2815,14 +2815,8 @@
         "command": "-workbench.action.chat.open"
     },
     {
-        "key": "shift+cmd+7",
-        "command": "workbench.action.chat.openEditSession",
-        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
-    },
-    {
         "key": "shift+cmd+i",
-        "command": "-workbench.action.chat.openEditSession",
-        "when": "chatEditingParticipantRegistered && view != 'workbench.panel.chat.view.edits'"
+        "command": "-workbench.action.chat.openEditSession"
     },
     {
         "key": "ctrl+cmd+7",
@@ -2867,5 +2861,41 @@
         "key": "ctrl+x shift+r",
         "command": "workbench.action.debug.stop",
         "when": "inDebugMode && !focusedSessionIsAttach"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.chat.submit",
+        "when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress && !withinEditSessionDiff"
+    },
+    {
+        "key": "ctrl+cmd+enter",
+        "command": "workbench.action.chat.submitWithCodebase",
+        "when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "-workbench.action.chat.submitWithCodebase",
+    },
+    {
+        "key": "enter",
+        "command": "-workbench.action.chat.submit"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.chat.toggleAgentMode",
+        "when": "inChatInput && !chatSessionRequestInProgress && !withinEditSessionDiff"
+    },
+    {
+        "key": "shift+cmd+7",
+        "command": "workbench.action.openChat"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-chatEditor.action.reject",
+        "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+    },
+    {
+        "key": "ctrl+shift+cmd+7",
+        "command": "workbench.command.new.untitled.prompt"
     }
 ]
